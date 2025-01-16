@@ -15,8 +15,8 @@ export default function NavBar() {
 
   return (
     <nav className=" w-full border-gray-200 text-white fixed top-0 z-50">
-      <div className="container mx-auto flex justify-between items-center p-4">
-        <Link href="/" className="text-2xl font-bold text-blue-600">
+      <div className="container mx-auto flex justify-between items-center p-3">
+        <Link href="/" className="text-2xl font-bold">
           TechNova
         </Link>
         <div className="flex space-x-6">
