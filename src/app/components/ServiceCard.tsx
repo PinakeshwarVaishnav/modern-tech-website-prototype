@@ -5,7 +5,7 @@ interface ServiceCardProps {
 
 export default function ServiceCard({ title, description }: ServiceCardProps) {
   return (
-    <div className="bg-white shadow-lg rounded-xl p-6 hover:scale-105 transition-transform">
+    <div className="bg-white shadow-lg rounded-xl p-6 hover:scale-105 transition-transform bg-gradient-to-b from-white to-blue-100">
       <div className="flex items-center mb-4">
         <h2 className="text-2xl font-semibold">{title}</h2>
       </div>

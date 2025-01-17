@@ -14,11 +14,8 @@ export default function NavBar() {
   const pathname = usePathname() || "/";
 
   return (
-    <nav className=" w-full border-gray-200 text-white fixed top-0 z-50">
+    <nav className=" w-full border-gray-200 text-white fixed top-0 z-50 bg-gradient-to-r from-blue-700 to-rose-600">
       <div className="container mx-auto flex justify-between items-center p-3">
-        <Link href="/" className="text-2xl font-bold">
-          TechNova
-        </Link>
         <div className="flex space-x-6">
           {navItems.map((item) => (
             <Link
