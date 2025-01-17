@@ -1,5 +1,12 @@
 import Image from "next/image";
 
+interface TeamMemberCardProps {
+  name: string;
+  role: string;
+  image: string;
+  description: string;
+}
+
 const teamMembers = [
   {
     name: "Elena Rodriguez",
@@ -34,7 +41,12 @@ export default function TeamSection() {
   );
 }
 
-function TeamMemberCard({ name, role, image, description }) {
+function TeamMemberCard({
+  name,
+  role,
+  image,
+  description,
+}: TeamMemberCardProps) {
   return (
     <div className="bg-white shadow-lg rounded-xl overflow-hidden transition-all duration-300 hover:shadow-2xl">
       <Image
